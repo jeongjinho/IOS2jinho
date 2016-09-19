@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F1A24CF81D8FB81300E17F49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A24CF71D8FB81300E17F49 /* main.m */; };
+		F1ED81A11D8FB943000014F1 /* Personal.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED81A01D8FB943000014F1 /* Personal.m */; };
+		F1ED81A41D8FC197000014F1 /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED81A31D8FC197000014F1 /* Warrior.m */; };
+		F1ED81A71D8FC2B9000014F1 /* Wizard.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED81A61D8FC2B9000014F1 /* Wizard.m */; };
+		F1ED81AA1D8FC408000014F1 /* Archer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED81A91D8FC408000014F1 /* Archer.m */; };
+		F1ED81AD1D8FC548000014F1 /* Guner.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED81AC1D8FC548000014F1 /* Guner.m */; };
+		F1ED81B01D8FC6C5000014F1 /* Thief.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED81AF1D8FC6C5000014F1 /* Thief.m */; };
+		F1ED81B31D8FCB15000014F1 /* MacBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED81B21D8FCB15000014F1 /* MacBook.m */; };
+		F1ED81B61D8FCE22000014F1 /* Chicken.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED81B51D8FCE22000014F1 /* Chicken.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,22 @@
 /* Begin PBXFileReference section */
 		F1A24CF41D8FB81300E17F49 /* StructureClass */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StructureClass; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A24CF71D8FB81300E17F49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1ED819F1D8FB943000014F1 /* Personal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Personal.h; sourceTree = "<group>"; };
+		F1ED81A01D8FB943000014F1 /* Personal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personal.m; sourceTree = "<group>"; };
+		F1ED81A21D8FC197000014F1 /* Warrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
+		F1ED81A31D8FC197000014F1 /* Warrior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
+		F1ED81A51D8FC2B9000014F1 /* Wizard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wizard.h; sourceTree = "<group>"; };
+		F1ED81A61D8FC2B9000014F1 /* Wizard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wizard.m; sourceTree = "<group>"; };
+		F1ED81A81D8FC408000014F1 /* Archer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Archer.h; sourceTree = "<group>"; };
+		F1ED81A91D8FC408000014F1 /* Archer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Archer.m; sourceTree = "<group>"; };
+		F1ED81AB1D8FC548000014F1 /* Guner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guner.h; sourceTree = "<group>"; };
+		F1ED81AC1D8FC548000014F1 /* Guner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guner.m; sourceTree = "<group>"; };
+		F1ED81AE1D8FC6C5000014F1 /* Thief.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thief.h; sourceTree = "<group>"; };
+		F1ED81AF1D8FC6C5000014F1 /* Thief.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thief.m; sourceTree = "<group>"; };
+		F1ED81B11D8FCB15000014F1 /* MacBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacBook.h; sourceTree = "<group>"; };
+		F1ED81B21D8FCB15000014F1 /* MacBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacBook.m; sourceTree = "<group>"; };
+		F1ED81B41D8FCE22000014F1 /* Chicken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chicken.h; sourceTree = "<group>"; };
+		F1ED81B51D8FCE22000014F1 /* Chicken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chicken.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,22 @@
 			isa = PBXGroup;
 			children = (
 				F1A24CF71D8FB81300E17F49 /* main.m */,
+				F1ED81B41D8FCE22000014F1 /* Chicken.h */,
+				F1ED81B51D8FCE22000014F1 /* Chicken.m */,
+				F1ED81B11D8FCB15000014F1 /* MacBook.h */,
+				F1ED81B21D8FCB15000014F1 /* MacBook.m */,
+				F1ED81AE1D8FC6C5000014F1 /* Thief.h */,
+				F1ED81AF1D8FC6C5000014F1 /* Thief.m */,
+				F1ED81AB1D8FC548000014F1 /* Guner.h */,
+				F1ED81AC1D8FC548000014F1 /* Guner.m */,
+				F1ED81A81D8FC408000014F1 /* Archer.h */,
+				F1ED81A91D8FC408000014F1 /* Archer.m */,
+				F1ED81A51D8FC2B9000014F1 /* Wizard.h */,
+				F1ED81A61D8FC2B9000014F1 /* Wizard.m */,
+				F1ED81A21D8FC197000014F1 /* Warrior.h */,
+				F1ED81A31D8FC197000014F1 /* Warrior.m */,
+				F1ED819F1D8FB943000014F1 /* Personal.h */,
+				F1ED81A01D8FB943000014F1 /* Personal.m */,
 			);
 			path = StructureClass;
 			sourceTree = "<group>";
@@ -119,7 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1ED81B31D8FCB15000014F1 /* MacBook.m in Sources */,
+				F1ED81A71D8FC2B9000014F1 /* Wizard.m in Sources */,
+				F1ED81A41D8FC197000014F1 /* Warrior.m in Sources */,
 				F1A24CF81D8FB81300E17F49 /* main.m in Sources */,
+				F1ED81AD1D8FC548000014F1 /* Guner.m in Sources */,
+				F1ED81B01D8FC6C5000014F1 /* Thief.m in Sources */,
+				F1ED81A11D8FB943000014F1 /* Personal.m in Sources */,
+				F1ED81B61D8FCE22000014F1 /* Chicken.m in Sources */,
+				F1ED81AA1D8FC408000014F1 /* Archer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +294,7 @@
 				F1A24CFD1D8FB81300E17F49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
