@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1A0D4A01D912D9400A1621B /* Lord.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0D49F1D912D9400A1621B /* Lord.m */; };
 		F1D8EDB51D90C3AB0018CA83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D8EDB41D90C3AB0018CA83 /* main.m */; };
+		F1D8EDBD1D90C3BE0018CA83 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D8EDBC1D90C3BE0018CA83 /* Person.m */; };
+		F1D8EDC01D90C3EF0018CA83 /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D8EDBF1D90C3EF0018CA83 /* Warrior.m */; };
+		F1D8EDC31D90C44D0018CA83 /* Wizard.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D8EDC21D90C44D0018CA83 /* Wizard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F1A0D49E1D912D9400A1621B /* Lord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lord.h; sourceTree = "<group>"; };
+		F1A0D49F1D912D9400A1621B /* Lord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lord.m; sourceTree = "<group>"; };
 		F1D8EDB11D90C3AB0018CA83 /* CreatObjects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CreatObjects; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D8EDB41D90C3AB0018CA83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1D8EDBB1D90C3BE0018CA83 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F1D8EDBC1D90C3BE0018CA83 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F1D8EDBE1D90C3EF0018CA83 /* Warrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
+		F1D8EDBF1D90C3EF0018CA83 /* Warrior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
+		F1D8EDC11D90C44D0018CA83 /* Wizard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wizard.h; sourceTree = "<group>"; };
+		F1D8EDC21D90C44D0018CA83 /* Wizard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wizard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,14 @@
 		F1D8EDA81D90C3AB0018CA83 = {
 			isa = PBXGroup;
 			children = (
+				F1A0D49E1D912D9400A1621B /* Lord.h */,
+				F1A0D49F1D912D9400A1621B /* Lord.m */,
+				F1D8EDC11D90C44D0018CA83 /* Wizard.h */,
+				F1D8EDC21D90C44D0018CA83 /* Wizard.m */,
+				F1D8EDBE1D90C3EF0018CA83 /* Warrior.h */,
+				F1D8EDBF1D90C3EF0018CA83 /* Warrior.m */,
+				F1D8EDBB1D90C3BE0018CA83 /* Person.h */,
+				F1D8EDBC1D90C3BE0018CA83 /* Person.m */,
 				F1D8EDB31D90C3AB0018CA83 /* CreatObjects */,
 				F1D8EDB21D90C3AB0018CA83 /* Products */,
 			);
@@ -119,6 +139,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A0D4A01D912D9400A1621B /* Lord.m in Sources */,
+				F1D8EDC31D90C44D0018CA83 /* Wizard.m in Sources */,
+				F1D8EDC01D90C3EF0018CA83 /* Warrior.m in Sources */,
+				F1D8EDBD1D90C3BE0018CA83 /* Person.m in Sources */,
 				F1D8EDB51D90C3AB0018CA83 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +270,7 @@
 				F1D8EDBA1D90C3AB0018CA83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
