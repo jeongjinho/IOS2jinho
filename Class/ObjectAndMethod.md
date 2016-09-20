@@ -22,11 +22,11 @@
 
    생성된 객체를 프로그래머가  지속적으로 사용하려면 변수 또는 상수에 담아두고 있어야 한다.
 
--형식
+- 형식
 ```
 <데이터타입> *<변수이름> = <객체의 주소>;
 ```
- -코드 예제
+ - 코드 예제
  ```objective-c
   Person  *me  =  [[Person alloc] init];
 ````
@@ -106,7 +106,7 @@
    때때로 객체가 특정 행위를 수행하려면 부가적인 데이터가 필요하여 파마미터로 데이터를 전달하여
  더 명확하게 메서드를 선언하고 정의 할 수 있다.
 
--형식
+- 형식
 ```
 -(<반환타입>)<메서드이름>:(<타입>)(<내부이름>)
 
@@ -120,7 +120,7 @@ code)
 code)
 - (id)signUpWithUserId:(id)userid password:(id)pw emailAddress:(id)emailAdd phoneNumber: (id)phoneNum;
 ```
--파리미터가 있는 메서드 구현
+- 파리미터가 있는 메서드 구현
 
  ```objective-c
 
@@ -132,7 +132,7 @@ code)
     }
 ```
 
--구현
+- 구현
   ```objective-c
     [me signUpWithUserId:@"comjenius"
                 password:@"날찾지마시오123"
@@ -141,8 +141,10 @@ code)
 ```
 
 ---
+---
+` Honny Tip `
 Make QuickHelp
-
+ 
 /**
 
 *@version  : 버전상태를 쓰는 것
