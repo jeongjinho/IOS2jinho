@@ -18,7 +18,7 @@ Class     : 수업시간내용을 정리해 놓은 것입니다.
 
 ## week 3
    -[Class와 objective에서의 property & method] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/StructureClass/StructureClass.md)
-
+   -[Object생성과 Method정의,호출](https://github.com/jeongjinho/IOS2jinho/blob/master/Class/ObjectAndMethod.md)
 
 
 ```objective-C 
