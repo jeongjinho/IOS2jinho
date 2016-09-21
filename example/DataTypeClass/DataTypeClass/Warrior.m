@@ -26,7 +26,7 @@
     
     //마법사의 이전체력
     NSUInteger  beforeHealth=someCharacter.health;;
-    //마법사의 이후체력
+    
     
     //전사의 물리공격력만큼 궁수의 체력을 감소시킵니다.
     

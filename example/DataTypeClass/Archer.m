@@ -19,6 +19,7 @@
 
     
      //공격 하여 체력 떨어뜨림
+
     
     NSInteger beforeEnemyHealth=someCharacter.health;
     
