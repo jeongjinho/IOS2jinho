@@ -28,8 +28,9 @@
 ```
  - 코드 예제
  ```objective-c
+
   Person  *me  =  [[Person alloc] init];
-````
+```
 
 ## 프로퍼티 접근
 
@@ -120,7 +121,7 @@ code)
 code)
 - (id)signUpWithUserId:(id)userid password:(id)pw emailAddress:(id)emailAdd phoneNumber: (id)phoneNum;
 ```
-- 파리미터가 있는 메서드 구현
+- 파리미터가 있는 메서드 정의
 
  ```objective-c
 
