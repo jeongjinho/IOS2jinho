@@ -46,8 +46,7 @@ int main(int argc, const char * argv[]) {
     NSNumber *someNumberObject=  @100;//[[NSNumber alloc] initWithInt:100];
     NSNumber *anotherNumberVarialbe =someNumberObject;//  주소값을복사해온다. 그래서 주소로가서 값을바뀐다면 둘다바뀐다.
     
-    
-    //vs
+        //vs
     
     NSInteger anotherNumber = twoHundred;//값을 복사해온다.값을복사하기때문에 twohundred가 바뀌어도 anotherNumber는 바뀌지않는다.
     
@@ -115,7 +114,7 @@ int main(int argc, const char * argv[]) {
     
 
     /**
-     format specifierc-형삭지정자
+     format specifierc-형식지정자
      정수 타입 : 부호가 있는 32bit정수타입 -> 10진수(%d)
      정수 타입 : 부호가 있는 64bit 정수타입 -> 10진수 (%ld) 참고로 NSInteger는 64bit으로 봐도 무방
      
@@ -126,7 +125,8 @@ int main(int argc, const char * argv[]) {
      실수 타입 : 32bit 실수 타입(%f)
      실수 타입 : 64bit 실수 타입(%lf) double인데  %d는 있으니깐 %lf
      */
-    NSLog(@"physicalPoswr : %ld",zino.health);
+    //정수 예제
+    NSLog(@"physicalPoswer : %ld",zino.health);
     
     zino.health  = -1;
     NSLog(@"health : %lu",zino.health);// unsigned 인데  -1이 언더플로우가 발생하여 코드상에 가장큰값으로나옴

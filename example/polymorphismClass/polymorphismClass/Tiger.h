@@ -8,6 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *@version 0.1
+ *@author jinho
+ *@brief  This Dragonclass.h is made to study polymorphism
+ */
 @interface Tiger : NSObject
+
+//property Declaration
+@property NSString *name;
+
+
+//Method Declaration
+- (id)cry;
+
+
+
+
 
 @end

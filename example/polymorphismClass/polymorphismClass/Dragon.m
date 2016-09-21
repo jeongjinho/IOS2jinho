@@ -8,6 +8,33 @@
 
 #import "Dragon.h"
 
+/**
+ *@version 0.1
+ *@author  jinho
+ *@brief 다형성 공부를 위한  DragonClass
+ */
 @implementation Dragon
+
+
+//Method definition
+
+- (id)cry{
+
+    NSLog(@"용용~용용죽겠지~~");
+    
+
+
+
+    
+    return nil;
+    
+}
+
+
+
+
+
+
+
 
 @end

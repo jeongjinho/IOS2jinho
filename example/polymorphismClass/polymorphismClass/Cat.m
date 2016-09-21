@@ -7,7 +7,29 @@
 //
 
 #import "Cat.h"
+/**
+ *@version 0.1
+ *@author  jinho
+ *@brief 다형성 공부를 위한  CatClass
+ */
 
 @implementation Cat
+
+
+
+
+
+
+- (id)cry{
+
+
+    
+    NSLog(@"야옹~야옹~~~");
+    
+    
+    return nil;
+
+}
+
 
 @end

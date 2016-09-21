@@ -10,4 +10,17 @@
 
 @interface Cat : NSObject
 
+
+
+//property 정의
+
+@property NSString  *name;
+
+
+
+//Method definition
+
+- (id) cry;
+
+
 @end

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F1C426841D9268C4008A48C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C426831D9268C4008A48C3 /* main.m */; };
+		F1C4268C1D9268D4008A48C3 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4268B1D9268D4008A48C3 /* Cat.m */; };
+		F1C4268F1D926A81008A48C3 /* Dragon.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4268E1D926A81008A48C3 /* Dragon.m */; };
+		F1C426951D926D99008A48C3 /* Tiger.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C426941D926D99008A48C3 /* Tiger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		F1C426801D9268C4008A48C3 /* polymorphismClass */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = polymorphismClass; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C426831D9268C4008A48C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1C4268A1D9268D4008A48C3 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		F1C4268B1D9268D4008A48C3 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		F1C4268D1D926A81008A48C3 /* Dragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragon.h; sourceTree = "<group>"; };
+		F1C4268E1D926A81008A48C3 /* Dragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragon.m; sourceTree = "<group>"; };
+		F1C426931D926D99008A48C3 /* Tiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiger.h; sourceTree = "<group>"; };
+		F1C426941D926D99008A48C3 /* Tiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				F1C426831D9268C4008A48C3 /* main.m */,
+				F1C4268A1D9268D4008A48C3 /* Cat.h */,
+				F1C4268B1D9268D4008A48C3 /* Cat.m */,
+				F1C4268D1D926A81008A48C3 /* Dragon.h */,
+				F1C4268E1D926A81008A48C3 /* Dragon.m */,
+				F1C426931D926D99008A48C3 /* Tiger.h */,
+				F1C426941D926D99008A48C3 /* Tiger.m */,
 			);
 			path = polymorphismClass;
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C4268F1D926A81008A48C3 /* Dragon.m in Sources */,
+				F1C426951D926D99008A48C3 /* Tiger.m in Sources */,
+				F1C4268C1D9268D4008A48C3 /* Cat.m in Sources */,
 				F1C426841D9268C4008A48C3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,4 +10,15 @@
 
 @interface Dragon : NSObject
 
+
+// property declaration
+@property NSString *name;
+
+
+
+// Method declaration
+
+- (id)cry;
+
+
 @end
