@@ -177,12 +177,7 @@ int main(int argc, const char * argv[]) {
     //unsigned int
     
     NSLog(@"%.2lf",50.22);// %.다음에 숫자가 소숫점을 몆개로 나타내냐는것 6자리까지 할수이쯤
-    // %-5ld
-    // %-04ld
-    // %+3ld
-    // %5.2f
-    // %-10.3f
-    // %10.0f
+   
     
     NSLog(@"-----------------------------------------------------");
     
@@ -216,5 +211,15 @@ int main(int argc, const char * argv[]) {
     //[rose fireArrow:jack];
     //[jack magicalAttackToEnermy:rose];
     //[jack magicalAttackToEnermy:rose];
+    
+    NSLog(@"%.1lf",50.22);
+    NSLog(@"%5d",50);
+    NSLog(@"%3.2f",4444444.44444);
+    NSLog(@"%5ld",222);
+    NSLog(@"%-04ld",33);
+    NSLog(@"%3ld",33);
+    NSLog(@"%7.2f",233.444);
+    NSLog(@"%.3f",12.2);
+    NSLog(@"%10.0f",45.55555);
         return 0;
 }
