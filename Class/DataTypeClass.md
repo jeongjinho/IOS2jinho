@@ -5,12 +5,12 @@
 
 여기에 맞는 데이터에는 데이터타입 적용 할 수 있어야 한다.
 
- ` 방식
+ ### 방식
 <자료형> <변수이름>;
 
 ##  종류
 
-
+```objective-c
      정수형
        
        - 부호가 있는 정수타입(NSInteger)
@@ -24,7 +24,7 @@
 
            
           NSInteger unsignedInteger =-100 ; = error
-         NSInteger unsignedInteger =100 ;  = success
+          NSInteger unsignedInteger =100 ;  = success
 
 
 
@@ -32,11 +32,10 @@
 
         objective-c에서는 기본적으로 CGFloat을 기본으로 쓴다.
 
-
      
          CGFloat height =200.3;
-    CGFloat weight = 59.5;
-       
+         CGFloat weight = 59.5;
+       ```
 
   - 하나의 문자
 
