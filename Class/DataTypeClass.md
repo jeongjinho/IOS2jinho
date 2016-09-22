@@ -5,7 +5,7 @@
 
 여기에 맞는 데이터에는 데이터타입 적용 할 수 있어야 한다.
 
- ` # 방식
+ ` 방식
 <자료형> <변수이름>;
 
 ##  - 종류
@@ -14,17 +14,19 @@
     - 정수형
 
        - 부호가 있는 정수타입(NSInteger)
-        ```objective-c
+       
+          ```objective-c
+       
           NSInteger signedInteger =-100 ;
-       ```
+          ```
 
-    - 부호가 없는 정수타입(NSUInteger)
+      - 부호가 없는 정수타입(NSUInteger)
 
             ```objective-c
           NSInteger unsignedInteger =-100 ; = error
          NSInteger unsignedInteger =100 ;  = success
 
-     ```
+             ```
 
     - 실수형(CGFloat)
 
@@ -41,9 +43,10 @@
     하나의 문자를 표현할 때는 character타입을 쓸 수 있다. 또한 문자하나는 아스키코드로 컴퓨터가 읽
     어서 문자대신 숫자를 넣어도 출력할때 해당 아스키코드에 맞는 문자를 출력한다.
 
-    ```objective-c
-        char someCharacter ='a';
-    ```
+          ```objective-c
+    
+          char someCharacter ='a';
+         ``` 
 
    - 객체형
 
@@ -91,7 +94,7 @@
 
 
        ``` objective-c
-          NSInteger integerValue= 50;
+    NSInteger integerValue= 50;
     NSLog(@“NSinteger : %ld”,integerValue);
 
     zino.health  = -1;
