@@ -62,10 +62,10 @@ return 0;
 ---
 
 `Example` 
-1.  Person클래스를 만든다.
-2.  Person 클래스를 상속받아 Student  클래스를 만든다.
-3.  Person 클래스를 상속받아 Teacher 클래스를 만든다.
-4.  Student 클래스를상속받아 UniversityStudent를 만든다. 
+>1.  Person클래스를 만든다.
+>2.  Person 클래스를 상속받아 Student  클래스를 만든다.
+>3.  Person 클래스를 상속받아 Teacher 클래스를 만든다.
+>4.  Student 클래스를상속받아 UniversityStudent를 만든다. 
 
 
 `계층`
