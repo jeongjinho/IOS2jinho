@@ -208,9 +208,10 @@ int main(int argc, const char * argv[]) {
     
     
     [jack physicalAttackToEnermy:rose];
-    //[rose fireArrow:jack];
-    //[jack magicalAttackToEnermy:rose];
-    //[jack magicalAttackToEnermy:rose];
+    [rose silverArrow:jack];
+    [rose fireArrow:jack];
+    [jack magicalAttackToEnermy:rose];
+    [jack magicalAttackToEnermy:rose];
     
     NSLog(@"%.1lf",50.22);
     NSLog(@"%5d",50);
