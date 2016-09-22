@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Animal.h"
 
-@interface Tiger : NSObject
+@interface Tiger : Animal
+
+
+
+- (id)playWithAnoterAnimal : (Tiger *)anotherAnimal;
+
 
 @end

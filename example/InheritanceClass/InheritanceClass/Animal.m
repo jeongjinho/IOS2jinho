@@ -10,4 +10,17 @@
 
 @implementation Animal
 
+
+
+- (id)cry{
+    
+    
+    NSLog(@"%@가 울어용",self.name);
+    
+
+
+
+
+    return nil;
+}
 @end

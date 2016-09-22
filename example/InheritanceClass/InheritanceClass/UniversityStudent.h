@@ -10,4 +10,9 @@
 
 @interface UniversityStudent : Student
 
+
+
+@property NSString *major;
+
+- (id)goMT;
 @end

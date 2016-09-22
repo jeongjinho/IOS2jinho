@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GameCharacter.h"
+@interface Wizzard : GameCharacter // GameCharacter를 상속받아서 GameCharacter의 속성과행동을 사용할 수 있어서  자식클래스에 불필요하게 선언하는 코드를 줄일 수 있다.
 
-@interface Wizzard : NSObject
+
+
+
+
+
+- (id)masicalAttackTo:(GameCharacter *)someone;
+- (id)teleportTo :(NSString *)location;
+- (id)windtormTo : (GameCharacter *)someone;
+
 
 @end

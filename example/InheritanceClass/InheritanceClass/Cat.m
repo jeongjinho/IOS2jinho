@@ -10,4 +10,18 @@
 
 @implementation Cat
 
+
+
+- (id)cry{
+    
+    
+    NSLog(@"%@가 야옹야옹",self.name);
+    
+    
+    
+    
+    
+    return nil;
+}
+
 @end

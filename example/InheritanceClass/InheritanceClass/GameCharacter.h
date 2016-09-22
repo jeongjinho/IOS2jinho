@@ -10,4 +10,18 @@
 
 @interface GameCharacter : NSObject
 
+
+@property NSInteger health;
+@property NSInteger mana;
+@property NSInteger physicalPower;
+@property NSInteger magicalPower;
+@property BOOL isDead;
+@property NSString *name;
+@property NSString *weapon;
+
+
+- (id)physicalAttackTo:(GameCharacter*)someone;
+- (id)damagedAs: (NSInteger)damage;
+
+
 @end

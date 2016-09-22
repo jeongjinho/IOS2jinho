@@ -10,4 +10,25 @@
 
 @implementation Tiger
 
+
+- (id)cry{
+    
+    
+    NSLog(@"%@가 어흥어흥 ~~~",self.name);
+    
+    
+    
+    
+    
+    return nil;
+}
+
+
+- (id)playWithAnoterAnimal:(Tiger *)anotherAnimal {
+
+
+    NSLog(@" %@와 놀고있습니다.",anotherAnimal.name);
+
+    return nil;
+}
 @end

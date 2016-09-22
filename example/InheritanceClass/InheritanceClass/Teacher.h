@@ -7,7 +7,13 @@
 //
 
 #import "Person.h"
-
+#import "Student.h"
 @interface Teacher : Person
 
+
+
+@property NSString *subject;
+
+
+- (id)teach :(Student *)someone;
 @end

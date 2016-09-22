@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Animal.h"
 @interface Person : NSObject
+
+
+@property NSString  *name;
+@property NSInteger age;
+@property NSInteger residentNumber;
+@property NSString  *bloodType;
+
+- (id)eat;
+- (id)eatWhat :(id)food;
+
+- (id)adopt :(Animal *)someone;
 
 @end

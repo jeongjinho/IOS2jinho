@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		F1D371691D936D5500119302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D371681D936D5500119302 /* main.m */; };
+		F1D371711D936D6500119302 /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D371701D936D6500119302 /* Warrior.m */; };
+		F1D371741D936D7200119302 /* Wizzard.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D371731D936D7200119302 /* Wizzard.m */; };
+		F1D371771D936D8500119302 /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D371761D936D8500119302 /* GameCharacter.m */; };
+		F1D3717A1D9370F300119302 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D371791D9370F300119302 /* Dog.m */; };
+		F1D3717D1D93710200119302 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D3717C1D93710200119302 /* Cat.m */; };
+		F1D371801D93711100119302 /* Tiger.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D3717F1D93711100119302 /* Tiger.m */; };
+		F1D371831D93712200119302 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D371821D93712200119302 /* Animal.m */; };
+		F1D371861D93756E00119302 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D371851D93756E00119302 /* Person.m */; };
+		F1D371891D93769D00119302 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D371881D93769D00119302 /* Student.m */; };
+		F1D3718C1D93774F00119302 /* UniversityStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D3718B1D93774F00119302 /* UniversityStudent.m */; };
+		F1D3718F1D9378C900119302 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D3718E1D9378C900119302 /* Teacher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +36,28 @@
 /* Begin PBXFileReference section */
 		F1D371651D936D5500119302 /* InheritanceClass */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InheritanceClass; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D371681D936D5500119302 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1D3716F1D936D6500119302 /* Warrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
+		F1D371701D936D6500119302 /* Warrior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
+		F1D371721D936D7200119302 /* Wizzard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wizzard.h; sourceTree = "<group>"; };
+		F1D371731D936D7200119302 /* Wizzard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wizzard.m; sourceTree = "<group>"; };
+		F1D371751D936D8500119302 /* GameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharacter.h; sourceTree = "<group>"; };
+		F1D371761D936D8500119302 /* GameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharacter.m; sourceTree = "<group>"; };
+		F1D371781D9370F300119302 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		F1D371791D9370F300119302 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		F1D3717B1D93710200119302 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		F1D3717C1D93710200119302 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		F1D3717E1D93711100119302 /* Tiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiger.h; sourceTree = "<group>"; };
+		F1D3717F1D93711100119302 /* Tiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiger.m; sourceTree = "<group>"; };
+		F1D371811D93712200119302 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		F1D371821D93712200119302 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		F1D371841D93756E00119302 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F1D371851D93756E00119302 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F1D371871D93769D00119302 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		F1D371881D93769D00119302 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		F1D3718A1D93774F00119302 /* UniversityStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversityStudent.h; sourceTree = "<group>"; };
+		F1D3718B1D93774F00119302 /* UniversityStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversityStudent.m; sourceTree = "<group>"; };
+		F1D3718D1D9378C900119302 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		F1D3718E1D9378C900119302 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +91,54 @@
 			isa = PBXGroup;
 			children = (
 				F1D371681D936D5500119302 /* main.m */,
+				F1D371901D937BB600119302 /* PersontoUniversityStudent */,
+				F1D371911D937BEC00119302 /* Animals */,
+				F1D371921D937BFC00119302 /* gameCharacters */,
 			);
 			path = InheritanceClass;
+			sourceTree = "<group>";
+		};
+		F1D371901D937BB600119302 /* PersontoUniversityStudent */ = {
+			isa = PBXGroup;
+			children = (
+				F1D3718D1D9378C900119302 /* Teacher.h */,
+				F1D3718E1D9378C900119302 /* Teacher.m */,
+				F1D3718A1D93774F00119302 /* UniversityStudent.h */,
+				F1D3718B1D93774F00119302 /* UniversityStudent.m */,
+				F1D371871D93769D00119302 /* Student.h */,
+				F1D371881D93769D00119302 /* Student.m */,
+				F1D371841D93756E00119302 /* Person.h */,
+				F1D371851D93756E00119302 /* Person.m */,
+			);
+			name = PersontoUniversityStudent;
+			sourceTree = "<group>";
+		};
+		F1D371911D937BEC00119302 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				F1D371811D93712200119302 /* Animal.h */,
+				F1D371821D93712200119302 /* Animal.m */,
+				F1D3717E1D93711100119302 /* Tiger.h */,
+				F1D3717F1D93711100119302 /* Tiger.m */,
+				F1D3717B1D93710200119302 /* Cat.h */,
+				F1D3717C1D93710200119302 /* Cat.m */,
+				F1D371781D9370F300119302 /* Dog.h */,
+				F1D371791D9370F300119302 /* Dog.m */,
+			);
+			name = Animals;
+			sourceTree = "<group>";
+		};
+		F1D371921D937BFC00119302 /* gameCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				F1D371751D936D8500119302 /* GameCharacter.h */,
+				F1D371761D936D8500119302 /* GameCharacter.m */,
+				F1D371721D936D7200119302 /* Wizzard.h */,
+				F1D371731D936D7200119302 /* Wizzard.m */,
+				F1D3716F1D936D6500119302 /* Warrior.h */,
+				F1D371701D936D6500119302 /* Warrior.m */,
+			);
+			name = gameCharacters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D3718F1D9378C900119302 /* Teacher.m in Sources */,
+				F1D3717D1D93710200119302 /* Cat.m in Sources */,
+				F1D371741D936D7200119302 /* Wizzard.m in Sources */,
+				F1D371771D936D8500119302 /* GameCharacter.m in Sources */,
+				F1D3717A1D9370F300119302 /* Dog.m in Sources */,
+				F1D3718C1D93774F00119302 /* UniversityStudent.m in Sources */,
+				F1D371711D936D6500119302 /* Warrior.m in Sources */,
+				F1D371831D93712200119302 /* Animal.m in Sources */,
+				F1D371861D93756E00119302 /* Person.m in Sources */,
+				F1D371891D93769D00119302 /* Student.m in Sources */,
+				F1D371801D93711100119302 /* Tiger.m in Sources */,
 				F1D371691D936D5500119302 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

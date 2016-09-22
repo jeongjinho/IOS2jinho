@@ -10,4 +10,13 @@
 
 @interface Student : Person
 
+
+@property NSString *grade;
+@property NSString *studentID;
+//@property NSString *department;
+
+
+- (id)study;
+
+
 @end

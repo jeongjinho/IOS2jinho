@@ -10,4 +10,18 @@
 
 @implementation Dog
 
+
+
+- (id)cry{
+    
+    
+    NSLog(@"%@가 왕왕왈",self.name);
+    
+    
+    
+    
+    
+    return nil;
+}
+
 @end
