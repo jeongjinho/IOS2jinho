@@ -8,35 +8,35 @@
  ` 방식
 <자료형> <변수이름>;
 
-##  - 종류
+##  종류
 
 
-    - 정수형
-
+     정수형
+       
        - 부호가 있는 정수타입(NSInteger)
        
-          ```objective-c
+          
        
           NSInteger signedInteger =-100 ;
-          ```
+          
 
       - 부호가 없는 정수타입(NSUInteger)
 
-            ```objective-c
+           
           NSInteger unsignedInteger =-100 ; = error
          NSInteger unsignedInteger =100 ;  = success
 
-             ```
+
 
     - 실수형(CGFloat)
 
         objective-c에서는 기본적으로 CGFloat을 기본으로 쓴다.
 
 
-     ```objective-c
+     
          CGFloat height =200.3;
     CGFloat weight = 59.5;
-        ```
+       
 
   - 하나의 문자
 
