@@ -88,7 +88,8 @@ return 0;
    - (id)teach :(Student *)someone{
         
    NSLog(@"%@을 가르칩니다.",someone.name);
-
+   
+  return nil;
 }
 
 //main.m에서 구현
