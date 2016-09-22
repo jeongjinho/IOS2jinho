@@ -19,7 +19,7 @@ Class     : 수업시간내용을 정리해 놓은 것입니다.
    - [Object생성과 Method정의,호출] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/ObjectAndMethod.md)
    - [DataType과self사용법] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/DataTypeClass.md)
    - [상속] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/Inheritance.md)
-   - [오버라이드와 super] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/Override.md)
+   - [오버라이드] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/Override.md)
 
 
 
