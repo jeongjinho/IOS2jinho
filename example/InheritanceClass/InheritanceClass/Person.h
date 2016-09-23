@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Animal.h"
+//#import "Student.h"
+@class Student;
+//#import "Student.h"
+//#import "Teacher.h"
 @interface Person : NSObject
 
 
@@ -18,7 +22,9 @@
 
 - (id)eat;
 - (id)eatWhat :(id)food;
-
+- (id)what : (Student *)someone;
 - (id)adopt :(Animal *)someone;
+
+
 
 @end
