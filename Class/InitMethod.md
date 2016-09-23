@@ -115,11 +115,26 @@
   
 이렇게 하면 우리가 위에서 정해준 값들이 들어가서 초기화를 진행한다.
 
+
 또한 상속받은 객체가 초기화메소드안에서 자기가 정의해놓은 다른 초기화메서드나 부모클래스의 초기화메서드를  호출하여 사용 할 수 있다.
 
 
+```objective-c
 
-
+      -(instancetype)initWihtName:(NSString *)name isHandSome:(BOOL)
+     isHandSome  schoolName:(NSString *)school grade:(NSInteger)grade{
+     
+     self= [super initWithName:name isHanSome:isHansome];
+     //Person객체의 초기화메서드를 Student 메소드 정의 안에서 호출하여 사용하면 불필요한 코드를 줄일 수있다.
+     // self.name =name;
+     //self.isHanSome =isHanSome;
+     
+     //나머지 Student클래스에서 추가된 property중 초기화를 할 property만 초기화메서드로 다시 만들어 주면된다.
+    self.school =school;
+    self.grade = grade;
+    return self;
+       }
+   ```
 
 
 
