@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+// UIViewController를 ViewController가 상속받았다.
 @interface ViewController : UIViewController
-
 
 
 

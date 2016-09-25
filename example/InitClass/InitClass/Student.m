@@ -9,7 +9,7 @@
 #import "Student.h"
 
 @implementation Student
-
+ 
 
 
 - (instancetype)initWihtName:(NSString *)name city:(NSString *)city schoolName:(NSString *)school grade:(NSInteger)grade{
