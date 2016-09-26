@@ -46,7 +46,7 @@ int main(int argc, const char * argv[]) {
                 NSUInteger i;
                 for(i=0;i<3;i++){
                 
-                    NSLog(@"%@",);
+                   // NSLog(@"%@",);
                 
                 
                 }
