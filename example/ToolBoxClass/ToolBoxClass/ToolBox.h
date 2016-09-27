@@ -23,4 +23,5 @@
 + (CGFloat)mbToKb:(CGFloat)mb;
 + (NSInteger)timeToSec:(NSInteger)time;
 + (NSInteger)secToTime:(NSInteger)sec;
++ (CGFloat)convertCGfloat:(NSInteger)num;
 @end

@@ -82,6 +82,10 @@ int main(int argc, const char * argv[]) {
     }
     
     
+    //장학금메소드
+    
+    [CaculationSubject scholarShipWithGrade:3];
+    
 
     return 0;
 }

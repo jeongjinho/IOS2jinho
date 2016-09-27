@@ -17,11 +17,11 @@ int main(int argc, const char * argv[]) {
         [ToolBox timeToSec:11320];
         [ToolBox secToTime:4400];
         
-        NSInteger number;
+        NSInteger number=12;
+        CGFloat floater;
         
-        
-    
-        
+   floater = [ToolBox convertCGfloat:number];
+        NSLog(@"%.3lf입니다.",floater);
     }
     return 0;
 }

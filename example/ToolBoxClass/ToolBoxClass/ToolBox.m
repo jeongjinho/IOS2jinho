@@ -118,4 +118,9 @@
 
     
 }
++ (CGFloat)convertCGfloat:(NSInteger)num{
+    CGFloat floater=(CGFloat)num;
+    
+    return floater;
+}
 @end

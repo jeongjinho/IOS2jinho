@@ -70,6 +70,7 @@
     
     
     //playButton객체 프로퍼티에 버튼  title 즉 위에 Pause에 색깔을 입히는것  상태를 selected로 준 것을 보니 버튼이눌렸을때 Pause라는 빨간색 글자로 바뀔거 같당.
+    // setTitleColor에 매겨변수로 UIColor 클래스메서드를 사용해서 색을 반환
     [self.playButton setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
     
    // [self.playButton setTitleShadowColor:[UIColor orangeColor]forState:UIControlStateSelected];
@@ -77,16 +78,17 @@
     //눌렀을 때 버튼의색깔을 바꾸려면 어떻게 해야할까?
    // [playButton setBackgroundColor:[UIColor orangeColor] forState:
     // UIControlStateSelected];
-    
-    
     [self.playButton setBackgroundColor:[UIColor blueColor]];
     
    
+    //playButton객체 프로퍼티에 addTarget은 누르게될 타겟 객체 설정하는 것 같다.
+    // self라는 타겟을  forControlEvents 에서 가져온 TouchUpInside이 라면 clickPlayButton메서드를 호출하라는 것 같다.
+    //
     [self.playButton addTarget:self action:@selector(clickPlayButton:) forControlEvents:UIControlEventTouchUpInside];
     
-    
+    // 자기자신의 뷰에  자신의 playButton객체 프로퍼티를 view 위에 올리는 것
     [self.view addSubview:self.playButton];
-    
+    //
     self.timeLabel = [[UILabel alloc] initWithFrame:labelFrame];
     
     [self.timeLabel setTextColor:[UIColor brownColor]];
