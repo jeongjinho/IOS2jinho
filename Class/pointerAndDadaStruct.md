@@ -9,7 +9,7 @@
 ```objectivec
 	int main (int argc , const char *argv[])
 	// reference example
-	NSString *person = [[Person alloc] init];
+	Person *person = [[Person alloc] init];
     
     // value example
     NSInteger num = 13;
