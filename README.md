@@ -25,7 +25,7 @@ Class     : 수업시간내용을 정리해 놓은 것입니다.
    
    - [초기화메서드] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/InitMethod.md)
    - [메소드사용법] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/UseMethod.md)
-
+   - [포인터와구조체] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/pointerAndDadaStruct.md)
 
 
 
