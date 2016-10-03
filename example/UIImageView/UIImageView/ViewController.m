@@ -71,6 +71,7 @@
     fourFrame.layer.masksToBounds=YES;
     [baseFrame addSubview:fourFrame];
     
+    //중간프레임
     UIView *middleFrame=[[UIView alloc] initWithFrame:CGRectMake(0, baseFrame.frame.size.height+20, baseFrame.frame.size.width, baseFrame.frame.size.height/4)];
     
     middleFrame.backgroundColor=[UIColor blackColor];
@@ -81,6 +82,19 @@
     
     bottomFrame.backgroundColor=[UIColor blackColor];
     [middleFrame addSubview:bottomFrame];
+    
+    
+    //잔액label만들기
+    
+    UILabel *balance  =[[UILabel alloc] initWithFrame:CGRectMake(0,0, middleFrame.frame.size.width, middleFrame.frame.size.height)];
+    
+    balance.text =@"잔액";
+    balance.textColor =[UIColor  whiteColor];
+    balance.font =[UIFont systemFontOfSize:40.0f];
+    balance.textAlignment =NSTextAlignmentRight;
+    balance.font =[UIFont boldSystemFontOfSize:80.0f];
+    
+    [middleFrame addSubview:balance];
     
     
     //첫번째프레임 사진넣기
