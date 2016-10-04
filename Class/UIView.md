@@ -92,7 +92,7 @@ UIView *secondView = [[UIView alloc] initWithFrame :CGRect(30,30,50,40)];/second
 
 그림
 
-![Alt text](./스크린샷 2016-10-02 오후 8.16.22.png)
+/Users/jinhojeong/Desktop/IOS2jinho/Class/스크린샷 2016-10-02 오후 8.16.22.png
 
 그림을 보자면 메인뷰의 x,y는 (0.0)이다.  여기서 subView로 올리면 (0.0)기준으로 (40,40)으로 좌표점이 옮겨지게된다.
 이제 secondView를  view위에 올린다하면  view가  secondView입장에서 메인뷰가되는 것이니  (0,0)에서 (30,30)으로 가게된다. 
