@@ -4,7 +4,7 @@
 
 닭꼬치 같은 느낌!!
 
-![Alt text](./1475748892323.png)
+!https://github.com/jeongjinho/IOS2jinho/blob/master/Class/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-10-06%20%EC%98%A4%ED%9B%84%207.13.49.png
 
 
 
