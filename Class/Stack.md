@@ -4,7 +4,7 @@
 
 닭꼬치 같은 느낌!!
 
-![Alt text](./1475748892323.png)
+![Alt text](./Users/jinhojeong/Desktop/IOS2jinho/Class/stackPicture.png)
 
 
 
