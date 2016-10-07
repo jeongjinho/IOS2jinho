@@ -65,9 +65,6 @@
    
     
     
-
-
-
     return songsData;
 
 }
@@ -111,6 +108,7 @@
     NSMutableArray *songlist = [dic objectForKey:@"song_list"];
     
     NSDate *playTime;
+    
        for(NSDictionary *song in songlist){
         
         if( [name isEqualToString:[song valueForKey:@"name"]]){
@@ -118,6 +116,7 @@
             
             
              playTime= [song valueForKey:@"total_play_time"];
+            
             
             return playTime;
             

@@ -24,6 +24,16 @@ int main(int argc, const char * argv[]) {
         NSLog(@"데이터들 %@",[ForIn songDatas:aoaAlbum]);
         NSLog(@"가사 : %@",[ForIn lyricWithData:aoaAlbum name:@"Luv Me"]);
         NSLog(@"러브미 재생시간 %@",[ForIn playTimeWithData:aoaAlbum name:@"Luv Me"]);
+        
+        
+        NSString *test= @"s2ads2123dd";
+       
+        
+        NSLog(@"%@",[[test componentsSeparatedByCharactersInSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]]
+                     componentsJoinedByString:@""]);
+
+        
+       // NSLog(@"%ld",num);
     }
     return 0;
 }
