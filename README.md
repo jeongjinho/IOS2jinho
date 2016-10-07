@@ -32,6 +32,6 @@ Class     : 수업시간내용을 정리해 놓은 것입니다.
 ## week5
    
    - [UIView]  (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/forClass.md)
-   - [반복문]    (inho/IOS2jinho/blob/master/Class/forClass.md) 
+   - [반복문]    (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/forClass.md) 
    - [스택자료구조] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/Stack.md)
 
