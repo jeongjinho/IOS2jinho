@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F118CBE01DAC7A8C0015F544 /* itemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F118CBDF1DAC7A8C0015F544 /* itemView.m */; };
 		F18C84CC1D9E4D0100468EBE /* obama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F18C84CB1D9E4D0100468EBE /* obama.jpg */; };
 		F18C84CE1D9E4D8500468EBE /* trump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F18C84CD1D9E4D8500468EBE /* trump.jpg */; };
 		F18C84D01D9E4DDA00468EBE /* hil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F18C84CF1D9E4DDA00468EBE /* hil.jpg */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F118CBDE1DAC7A8C0015F544 /* itemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemView.h; sourceTree = "<group>"; };
+		F118CBDF1DAC7A8C0015F544 /* itemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = itemView.m; sourceTree = "<group>"; };
 		F18C84CB1D9E4D0100468EBE /* obama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obama.jpg; sourceTree = "<group>"; };
 		F18C84CD1D9E4D8500468EBE /* trump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trump.jpg; sourceTree = "<group>"; };
 		F18C84CF1D9E4DDA00468EBE /* hil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hil.jpg; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				F1BF6F4E1D9E38AF001A96E6 /* AppDelegate.h */,
+				F118CBDE1DAC7A8C0015F544 /* itemView.h */,
+				F118CBDF1DAC7A8C0015F544 /* itemView.m */,
 				F1BF6F4F1D9E38AF001A96E6 /* AppDelegate.m */,
 				F1BF6F511D9E38AF001A96E6 /* ViewController.h */,
 				F1BF6F521D9E38AF001A96E6 /* ViewController.m */,
@@ -169,6 +174,7 @@
 				F1BF6F531D9E38AF001A96E6 /* ViewController.m in Sources */,
 				F1BF6F501D9E38AF001A96E6 /* AppDelegate.m in Sources */,
 				F1BF6F4D1D9E38AF001A96E6 /* main.m in Sources */,
+				F118CBE01DAC7A8C0015F544 /* itemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
