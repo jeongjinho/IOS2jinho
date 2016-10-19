@@ -1,3 +1,6 @@
+##Naming rule
+
+뜻 불명확&축약
 ```
 //pw은 뜻이 명확하지않아서 passwordLabel로 고침
 @property UILabel *passwordLabel;
