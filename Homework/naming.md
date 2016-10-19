@@ -24,5 +24,5 @@
 
 ```
 //tap 무엇을 탭하는지 x
-@property UITapGestureRecognizer *anotherWindwTap;
+@property UITapGestureRecognizer *anotherWindowTap;
 ```
