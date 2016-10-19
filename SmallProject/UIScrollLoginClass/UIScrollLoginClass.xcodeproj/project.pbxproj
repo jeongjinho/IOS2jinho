@@ -13,7 +13,11 @@
 		F118CC441DACF27D0015F544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F118CC421DACF27D0015F544 /* Main.storyboard */; };
 		F118CC461DACF27D0015F544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F118CC451DACF27D0015F544 /* Assets.xcassets */; };
 		F118CC491DACF27D0015F544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F118CC471DACF27D0015F544 /* LaunchScreen.storyboard */; };
-		F199C6D41DADD11000B4EE29 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = F199C6D31DADD11000B4EE29 /* Login.m */; };
+		F1D66E4A1DAE2A730066E402 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = F1D66E491DAE2A730066E402 /* unchecked.png */; };
+		F1D66E521DAE2F700066E402 /* checkedPw.png in Resources */ = {isa = PBXBuildFile; fileRef = F1D66E511DAE2F700066E402 /* checkedPw.png */; };
+		F1D66E541DAE358B0066E402 /* sunglass.png in Resources */ = {isa = PBXBuildFile; fileRef = F1D66E531DAE358B0066E402 /* sunglass.png */; };
+		F1D66E561DAE36250066E402 /* hanger.png in Resources */ = {isa = PBXBuildFile; fileRef = F1D66E551DAE36250066E402 /* hanger.png */; };
+		F1D66E5A1DAF1F850066E402 /* musta.png in Resources */ = {isa = PBXBuildFile; fileRef = F1D66E591DAF1F850066E402 /* musta.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +31,11 @@
 		F118CC451DACF27D0015F544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F118CC481DACF27D0015F544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F118CC4A1DACF27D0015F544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F199C6D21DADD11000B4EE29 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
-		F199C6D31DADD11000B4EE29 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		F1D66E491DAE2A730066E402 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		F1D66E511DAE2F700066E402 /* checkedPw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkedPw.png; sourceTree = "<group>"; };
+		F1D66E531DAE358B0066E402 /* sunglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunglass.png; sourceTree = "<group>"; };
+		F1D66E551DAE36250066E402 /* hanger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hanger.png; sourceTree = "<group>"; };
+		F1D66E591DAF1F850066E402 /* musta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musta.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +68,13 @@
 		F118CC381DACF27D0015F544 /* UIScrollLoginClass */ = {
 			isa = PBXGroup;
 			children = (
+				F1D66E491DAE2A730066E402 /* unchecked.png */,
+				F1D66E511DAE2F700066E402 /* checkedPw.png */,
+				F1D66E591DAF1F850066E402 /* musta.png */,
+				F1D66E551DAE36250066E402 /* hanger.png */,
+				F1D66E531DAE358B0066E402 /* sunglass.png */,
 				F118CC3C1DACF27D0015F544 /* AppDelegate.h */,
 				F118CC3D1DACF27D0015F544 /* AppDelegate.m */,
-				F199C6D21DADD11000B4EE29 /* Login.h */,
-				F199C6D31DADD11000B4EE29 /* Login.m */,
 				F118CC3F1DACF27D0015F544 /* ViewController.h */,
 				F118CC401DACF27D0015F544 /* ViewController.m */,
 				F118CC421DACF27D0015F544 /* Main.storyboard */,
@@ -143,8 +153,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F118CC491DACF27D0015F544 /* LaunchScreen.storyboard in Resources */,
+				F1D66E5A1DAF1F850066E402 /* musta.png in Resources */,
+				F1D66E521DAE2F700066E402 /* checkedPw.png in Resources */,
 				F118CC461DACF27D0015F544 /* Assets.xcassets in Resources */,
+				F1D66E561DAE36250066E402 /* hanger.png in Resources */,
+				F1D66E541DAE358B0066E402 /* sunglass.png in Resources */,
 				F118CC441DACF27D0015F544 /* Main.storyboard in Resources */,
+				F1D66E4A1DAE2A730066E402 /* unchecked.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +173,6 @@
 				F118CC411DACF27D0015F544 /* ViewController.m in Sources */,
 				F118CC3E1DACF27D0015F544 /* AppDelegate.m in Sources */,
 				F118CC3B1DACF27D0015F544 /* main.m in Sources */,
-				F199C6D41DADD11000B4EE29 /* Login.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
