@@ -10,17 +10,27 @@
 
 @interface ViewController ()<UIScrollViewDelegate,UITextFieldDelegate>
 
-
+@property UILabel *mainViewLabel;
 @property UILabel *idLabel;
-@property UILabel *pwLabel;
+//pw은 뜻이 명확하지않아서 passwordLabel로 고침
+@property UILabel *passwordLabel;
+
 @property UITextField *idText;
-@property UITextField *pwText;
+//pw은 뜻이 명확하지않아서 passwordText로 고침
+@property UITextField *passwordText;
 @property UIScrollView *mainScroll;
-@property UITapGestureRecognizer *tap;
-@property UIButton *loginBtn;
-@property UIButton *signInBtn;
+@property UITapGestureRecognizer *anotherWindowTap;
+//Btn은 축약이여서 명확하지 않으므로 Button으로 바꾼다.
+@property UIButton *loginButton;
+@property UIButton *signInButton;
 @property UIView *loginWindow;
-@property UIImageView *logoimgView;
+//img축약이면서 음절을 끊어질때마다 대문자로 시작한다.
+@property UIImageView *logoImageView;
+@property CGPoint firstTouchPoint;
+@property CGFloat xd;
+@property CGFloat yd;
+@property BOOL dragging;
+
 
 @end
 
@@ -32,24 +42,35 @@
     
     
     
-    UILabel *mainViewLabel = [[UILabel alloc]initWithFrame:CGRectMake(0,40,self.view.frame.size.width,50)];
-    mainViewLabel.text=@"My   Login   Page";
-    mainViewLabel.font=[UIFont systemFontOfSize:30.f];
-    [self.view addSubview:mainViewLabel];
-    mainViewLabel.textAlignment=NSTextAlignmentCenter;
     
-    self.logoimgView=[[UIImageView alloc] init];
-    self.logoimgView.frame=CGRectMake(self.view.center.x-70, 90, 140,130);
-    self.logoimgView.image=[UIImage imageNamed:@"musta"];
+    self.logoImageView=[[UIImageView alloc] init];
+    self.logoImageView.frame=CGRectMake(self.view.frame.size.width/3, 90, 140,130);
+    self.logoImageView.image=[UIImage imageNamed:@"musta"];
     
-    [self.view addSubview:self.logoimgView];
+       [self.logoImageView setUserInteractionEnabled:YES];
     
-    self.mainScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
-    [self.mainScroll setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+20)];
+    
+    [self.view addSubview:self.logoImageView];
+    
+    self.mainScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0, self.view.frame.size.width, self.view.frame.size.height)];
+    
+    [self.mainScroll setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height)];
     
     self.mainScroll.delegate=self;
+    [self.view addSubview:self.mainScroll];
+
+//    UIView *eview= [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+//    eview.backgroundColor=[UIColor clearColor];
+//    [self.mainScroll addSubview:eview];
     
+    self.mainViewLabel = [[UILabel alloc]initWithFrame:CGRectMake(0,40,self.view.frame.size.width,50)];
+    self.mainViewLabel.text=@"My   Login   Page";
+    self.mainViewLabel.font=[UIFont systemFontOfSize:30.f];
+        self.mainViewLabel.textAlignment=NSTextAlignmentCenter;
+    [self.mainViewLabel setUserInteractionEnabled:YES];
+    [self.view addSubview:self.mainViewLabel];
+
     //login 테두리
     self.loginWindow=[[UIView alloc]initWithFrame:CGRectMake(self.view.center.x-(self.view.frame.size.width-80)/2,220,self.view.frame.size.width-80, 160)];
     self.loginWindow.backgroundColor=[UIColor whiteColor];
@@ -59,8 +80,7 @@
     [self.mainScroll addSubview:self.loginWindow];
     
 
-    [self.view addSubview:self.mainScroll];
-    //아이디라벨
+      //아이디라벨
     self.idLabel= [[UILabel alloc]initWithFrame:CGRectMake(80, 250,self.view.frame.size.width/5, 50)];
     self.idLabel.text= @"I D";
     self.idLabel.font=[UIFont boldSystemFontOfSize:18.0f];
@@ -69,10 +89,10 @@
     
     //비빌번호라벨
     
-    self.pwLabel= [[UILabel alloc]initWithFrame:CGRectMake(80, 300,self.view.frame.size.width/5, 50)];
-    self.pwLabel.text= @"PW";
-    self.pwLabel.font=[UIFont boldSystemFontOfSize:18.0f];
-    [self.mainScroll addSubview:self.pwLabel];
+    self.passwordLabel= [[UILabel alloc]initWithFrame:CGRectMake(80, 300,self.view.frame.size.width/5, 50)];
+    self.passwordLabel.text= @"PW";
+    self.passwordLabel.font=[UIFont boldSystemFontOfSize:18.0f];
+    [self.mainScroll addSubview:self.passwordLabel];
     
     //아이디텍스트창
     
@@ -86,60 +106,89 @@
     
     //비밀번호창
     
-    self.pwText=[[UITextField alloc] initWithFrame:CGRectMake(130, 300, 150, 50)];
-    self.pwText.clearButtonMode=UITextFieldViewModeWhileEditing;
-    self.pwText.secureTextEntry=YES;
-    self.pwText.placeholder=@"패스워드";
-    [self.mainScroll addSubview:self.pwText];
-    self.pwText.delegate=self;
+    self.passwordText=[[UITextField alloc] initWithFrame:CGRectMake(130, 300, 150, 50)];
+    self.passwordText.clearButtonMode=UITextFieldViewModeWhileEditing;
+    self.passwordText.secureTextEntry=YES;
+    self.passwordText.placeholder=@"패스워드";
+    [self.mainScroll addSubview:self.passwordText];
+    self.passwordText.delegate=self;
     
     
-    self.tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resignKeyboard:)];
+    self.anotherWindowTap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resignKeyboard:)];
     
-    [self.view addGestureRecognizer:self.tap];
+    [self.view addGestureRecognizer:self.anotherWindowTap];
     
 
     //login Button
     
-    self.loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.loginBtn.frame=CGRectMake(100, 400, 50, 30);
-    [self.loginBtn setTitle:@"로그인" forState:UIControlStateNormal];
-    [self.loginBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.loginBtn setTitle:@"로그인" forState:UIControlStateHighlighted];
-    [self.loginBtn setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-    [self.loginBtn setTitle:@"로그인" forState:UIControlStateSelected];
-    [self.loginBtn setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
-         self.loginBtn.backgroundColor=[UIColor whiteColor];
-     [self.mainScroll addSubview:self.loginBtn];
+    self.loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.loginButton.frame=CGRectMake(100, 400, 50, 30);
+    [self.loginButton setTitle:@"로그인" forState:UIControlStateNormal];
+    [self.loginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.loginButton setTitle:@"로그인" forState:UIControlStateHighlighted];
+    [self.loginButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    [self.loginButton setTitle:@"로그인" forState:UIControlStateSelected];
+    [self.loginButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
+         self.loginButton.backgroundColor=[UIColor whiteColor];
+     [self.mainScroll addSubview:self.loginButton];
     
     
     //signIn Button
     
-    self.signInBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.signInBtn.frame=CGRectMake(200, 400, 80, 30);
-    [self.signInBtn setTitle:@"회원가입" forState:UIControlStateNormal];
-    [self.signInBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.signInBtn setTitle:@"회원가입"forState:UIControlStateHighlighted];
-    [self.signInBtn setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-    [self.signInBtn setTitle:@"회원가입"forState:UIControlStateSelected];
-    [self.signInBtn setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
+    self.signInButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.signInButton.frame=CGRectMake(200, 400, 80, 30);
+    [self.signInButton setTitle:@"회원가입" forState:UIControlStateNormal];
+    [self.signInButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.signInButton setTitle:@"회원가입"forState:UIControlStateHighlighted];
+    [self.signInButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    [self.signInButton setTitle:@"회원가입"forState:UIControlStateSelected];
+    [self.signInButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
 
-    self.signInBtn.backgroundColor=[UIColor whiteColor];
-    [self.mainScroll addSubview:self.signInBtn];
+    self.signInButton.backgroundColor=[UIColor whiteColor];
+    [self.mainScroll addSubview:self.signInButton];
     
-    UIButton *pwButton=[[UIButton alloc] init];
-    pwButton.frame=CGRectMake(300, 315, 20, 20);
-    [pwButton setImage:[UIImage imageNamed:@"unchecked"] forState:UIControlStateNormal];
-     [pwButton setImage:[UIImage imageNamed:@"checkedPw"] forState:UIControlStateSelected];
+    UIButton *passwordButton=[[UIButton alloc] init];
+    passwordButton.frame=CGRectMake(300, 315, 20, 20);
+    [passwordButton setImage:[UIImage imageNamed:@"unchecked"] forState:UIControlStateNormal];
+     [passwordButton setImage:[UIImage imageNamed:@"checkedPw"] forState:UIControlStateSelected];
     
     
-    [pwButton addTarget:self action:@selector(TouchInSideCheckBox:) forControlEvents:UIControlEventTouchUpInside];
-    [self.mainScroll addSubview:pwButton];
+    [passwordButton addTarget:self action:@selector(TouchInSideCheckBox:) forControlEvents:UIControlEventTouchUpInside];
+    [self.mainScroll addSubview:passwordButton];
     
     
 
 }
 
+
+//- (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event {
+//    UITouch *touch = [[event allTouches] anyObject];
+//    CGPoint touchLocation = [touch locationInView:touch.view];
+//    self.logoimgView.center = touchLocation;
+//    
+//    if ([touch.view isEqual: self.view] || touch.view == nil) {
+//        return;
+//    }
+//    
+//}
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    UITouch *touch = [touches anyObject];
+//    self.firstTouchPoint = [touch locationInView:self.view];
+//    NSLog(@"%lf",self.firstTouchPoint.x);
+//
+//
+//
+//}
+
+- (void)touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event {
+    UITouch *touch = [touches anyObject];
+    printf("---------");
+    self.firstTouchPoint = [touch locationInView:self.view];
+    
+        self.mainViewLabel.center=CGPointMake(self.firstTouchPoint.x
+                                            , self.firstTouchPoint.y);
+    
+}
 
 -(void)TouchInSideCheckBox:(UIButton*)sender{
 
@@ -147,14 +196,14 @@
         sender.selected=NO;
         
         NSLog(@"누른걸또누름");
-        self.pwText.secureTextEntry=YES;
+        self.passwordText.secureTextEntry=YES;
     }else{
         NSLog(@"처음누름");
 
         sender.selected=YES;
         
      
-        self.pwText.secureTextEntry=NO;
+        self.passwordText.secureTextEntry=NO;
     
     }
     
@@ -177,7 +226,7 @@
 
 [self.mainScroll setContentOffset:CGPointMake(0, -20) animated:YES];
     [self.idText resignFirstResponder];
-    [self.pwText resignFirstResponder];
+    [self.passwordText resignFirstResponder];
 
 }
 
@@ -196,12 +245,12 @@
     [self.idText resignFirstResponder];
     
     NSLog(@"dsds");
-    [self.pwText becomeFirstResponder];
+    [self.passwordText becomeFirstResponder];
    // ;
    
-    if([self.pwText.text length]>=1){
+    if([self.passwordText.text length]>=1){
        [self.mainScroll setContentOffset:CGPointMake(0, -20) animated:YES];
-        [self.pwText resignFirstResponder];
+        [self.passwordText resignFirstResponder];
         
         
            }

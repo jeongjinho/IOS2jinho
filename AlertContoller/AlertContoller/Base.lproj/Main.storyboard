@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71O-AQ-D3R">
+                                <state key="normal" title="버튼B"/>
+                                <connections>
+                                    <action selector="touchInSideAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WBw-PW-ycT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM5-nV-gYr">
+                                <state key="normal" title="버튼A"/>
+                                <connections>
+                                    <action selector="touchInSideAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4A3-wz-WUb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="IM5-nV-gYr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0qo-hV-Oam"/>
+                            <constraint firstItem="IM5-nV-gYr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="3Bj-wT-pdQ"/>
+                            <constraint firstItem="71O-AQ-D3R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E4r-LC-0ox"/>
+                            <constraint firstItem="71O-AQ-D3R" firstAttribute="top" secondItem="IM5-nV-gYr" secondAttribute="bottom" constant="101" id="arj-6Z-M3f"/>
+                            <constraint firstItem="71O-AQ-D3R" firstAttribute="centerX" secondItem="IM5-nV-gYr" secondAttribute="centerX" id="lZg-qg-qzs"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Dr4-ZU-piP" appends="YES" id="Sv9-OF-cO1"/>
+                            <outletCollection property="gestureRecognizers" destination="PMc-eJ-9su" appends="YES" id="mjW-7D-194"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Dr4-ZU-piP"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="PMc-eJ-9su"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
